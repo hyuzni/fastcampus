@@ -12,6 +12,9 @@ require('@babel/polyfill') // 변수로 선언하지 않고 한번만 씀
 module.exports = (env, opts) => {
     const config = {
         // 중복되는 옵션들
+        resolve: {
+            extensions: ['.vue','.js'] // import 확장자 생략
+        },
         entry: { // 최초 진입점. 시작 경로를 지정하는 옵션
             app: [
                 '@babel/polyfill',
@@ -49,7 +52,7 @@ module.exports = (env, opts) => {
                     use: [
                         'vue-style-loader',
                         'css-loader',
-                        'postcss-loader', // sass 보다 먼저 돌아가야 함 왜 안되지??????
+                        'postcss-loader',
                         'sass-loader'
                     ]
                 }
@@ -75,7 +78,7 @@ module.exports = (env, opts) => {
             // 추가 개발용 옵션
             devtool: 'eval',
             devServer: {
-                open: true,
+                open: false,
                 hot: true // hot module replacement
             },
         })

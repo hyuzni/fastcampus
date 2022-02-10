@@ -5,3 +5,4 @@
 npm -D(개발용)으로 설치된 dependency는 전역 사용이 안됨. script로 등록해서 사용
 5. scss 를 쓰기위한 sass-loader node-sass 설치
 > node-sass는 문제가 많네 ... 제거 후 sass로 재 설치
+6. postcss 는 뭐가 문제였는지 모르겠음 autoprefixer 를 셋팅을 해도 안되서 이것저것 해보다가 번들파일을 만들어보니 되었고 그러고 개발도 됨 왜지?? 여튼 됨

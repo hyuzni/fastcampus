@@ -1,9 +1,9 @@
 <template>
-<h1>{{ msg }}</h1>
+<h1     >{{ msg }}</h1>
 </template>
 <script>
 export default {
-    data () {
+    data      () {
         return {
             msg : 'Hello Vue!????'
         }
@@ -11,9 +11,9 @@ export default {
 }
 </script>
 <style scoped lang="scss">
-$color : blue;
+$c-blue : blue;
 h1 {
-    color: $color;
+    color: $c-blue;
     display: flex;
 }
 </style>
