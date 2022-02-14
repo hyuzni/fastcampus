@@ -17,6 +17,8 @@ module.exports = {
         'vue'
     ],
     rules: {
-        
+        'no-new': 0, // exception
+        // 'no-new': 2, // warning
+
     }
 }

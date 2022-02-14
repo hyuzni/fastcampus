@@ -1,7 +1,7 @@
 
 module.exports = {
-    plugins: [
-        require("autoprefixer")
+  plugins: [
+    require('autoprefixer')
     //   [
     //     'postcss-preset-env',
     //     {
@@ -11,8 +11,8 @@ module.exports = {
     //     },
     //   ],
     //   [
-    //     'postcss-short', 
+    //     'postcss-short',
     //     { prefix: 'x', skip: '-' }
     //   ]
-    ]
-  }
+  ]
+}

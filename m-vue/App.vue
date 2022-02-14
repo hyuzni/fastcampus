@@ -1,13 +1,13 @@
 <template>
-<h1     >{{ msg }}</h1>
+<h1 >{{ msg }}</h1>
 </template>
 <script>
 export default {
-    data      () {
-        return {
-            msg : 'Hello Vue!????'
-        }
+  data () {
+    return {
+      msg: 'Hello Vue!????'
     }
+  }
 }
 </script>
 <style scoped lang="scss">
